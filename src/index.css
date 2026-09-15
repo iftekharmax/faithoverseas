@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --color-crimson: #C3161C;
+  --color-crimson-dark: #9E1015;
+  --color-crimson-light: #E0262D;
+  --color-gold-accent: #F59E0B;
+}
+
+:root {
+  --brand-crimson: #C3161C;
+  --brand-crimson-dark: #9E1015;
+  --brand-crimson-light: #E0262D;
+  --brand-gold: #F59E0B;
+}
+
+.font-heading {
+  font-family: 'Outfit', var(--font-sans), sans-serif;
+}
+
+/* Custom smooth glass and backdrop styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(195, 22, 28, 0.12);
+}
+
+.glass-dark {
+  background: rgba(18, 10, 13, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(195, 22, 28, 0.2);
+}
+
+/* Subtle gradient text utility */
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
